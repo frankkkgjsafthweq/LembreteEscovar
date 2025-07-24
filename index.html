@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Inicial - Escovação de Dentes</title>
-    <link rel="stylesheet" href="telai.css">
+    <title>Lembrete de Escovação de Dentes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="intro-content">
-            <h1>Bem-vindo ao Lembrete de Escovação de Dentes!</h1>
-            <p>Cuide da sua saúde bucal com facilidade. Clique no botão abaixo para começar a escovar os dentes.</p>
-            <a href="index.html" id="start-btn" class="btn">
-    Iniciar Escovação
-</a>
-
+        <div class="header">
+            <h1>Lembre-se de Escovar os Dentes</h1>
+            <p>Escove seus dentes por 2 minutos e mantenha sua saúde bucal em dia.</p>
         </div>
 
-        <div class="animation-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+        <div class="timer-section">
+            <h2>Cronômetro de Escovação</h2>
+            <div id="timer-display">02:00</div>
+            <button id="start-timer" class="btn">Iniciar Escovação</button>
         </div>
+
+        <div class="status-section">
+            <h3>Status de Escovação</h3>
+            <p id="status">Ainda não escovou os dentes hoje.</p>
+        </div>
+
+        <div class="reminder-section">
+            <h3>Lembretes de Escovação</h3>
+            <button id="morning-reminder" class="btn">Lembrar de manhã</button>
+            <button id="night-reminder" class="btn">Lembrar à noite</button>
+        </div>
+
+        <div class="history-section">
+            <h3>Histórico de Escovações</h3>
+            <ul id="escovacao-history"></ul>
+        </div>
+
+        <!-- Div para animação dos confetes -->
+        <div id="confetti" class="confetti-container"></div>
     </div>
 
-    <script src="telai.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
